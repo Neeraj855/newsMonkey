@@ -1,5 +1,3 @@
-import React from "react";
-
 const NewsItem = ({ imgUrl, title, description, newsUrl, author, date , source}) => {
   return (
     <div className="my-3">
@@ -8,7 +6,9 @@ const NewsItem = ({ imgUrl, title, description, newsUrl, author, date , source})
         <div className="card-body">
           <h5 className="card-title">
             {title}{" "}
-            <span class="badge rounded-pill bg-warning text-dark">{source}</span>
+            <span className="badge rounded-pill bg-warning text-dark">
+              {source}
+            </span>
           </h5>
           <p className="card-text">{description}</p>
           <p className="card-text">
@@ -16,7 +16,12 @@ const NewsItem = ({ imgUrl, title, description, newsUrl, author, date , source})
               By: {author} on {new Date(date).toGMTString()}
             </small>
           </p>
-          <a href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
+          <a
+            href={newsUrl}
+            rel="noreferrer"
+            target="_blank"
+            className="btn btn-sm btn-dark"
+          >
             Read More
           </a>
         </div>
