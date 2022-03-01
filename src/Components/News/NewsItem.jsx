@@ -1,4 +1,12 @@
-const NewsItem = ({ imgUrl, title, description, newsUrl, author, date , source}) => {
+const NewsItem = ({
+  imgUrl,
+  title,
+  description,
+  newsUrl,
+  author,
+  date,
+  source,
+}) => {
   return (
     <div className="my-3">
       <div className="card">

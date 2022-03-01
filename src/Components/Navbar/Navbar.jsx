@@ -1,6 +1,6 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-warning">
       <div className="container-fluid">
@@ -25,52 +25,74 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/about">
-                About
-              </Link>
-            </li> */}
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/business">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/business"
+              >
                 Business
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/entertainment">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/entertainment"
+              >
                 Entertainment
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/general">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/general"
+              >
                 General
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/health">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/health"
+              >
                 Health
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/science">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/science"
+              >
                 Science
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/sports">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/sports"
+              >
                 Sports
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/technology">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/technology"
+              >
                 Technology
               </Link>
             </li>
           </ul>
-         
         </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
